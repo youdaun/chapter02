@@ -2,16 +2,24 @@ package com.javaex.ex02;
 
 public class Point {
 
-	int x;
-	int y;
+	private int x;
+	private int y;
 	
 	
-	public void setter(int a) {
-		x = a;
+	public void setX(int xp) {
+		x = xp;
 	}
 	
-	public void getter(int b) {
-		y = b;
+	public void setY(int yp) {
+		y = yp;
+	}
+	
+	public int getX() {
+		return x;
+	}
+	
+	public int getY() {
+		return y;
 	}
 	
 	public void draw() {

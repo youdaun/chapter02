@@ -4,15 +4,15 @@ public class PointApp {
 
 	public static void main(String[] args) {
 		
-		Point pp = new Point();
-		pp.x = 5;
-		pp.y = 5;
-		pp.draw();
+		Point p1 = new Point();
+		p1.setX(5);
+		p1.setY(5);
+		p1.draw();
 		
-		Point bb = new Point();
-		bb.x = 10;
-		bb.y = 23;
-		bb.draw();
+		Point p2 = new Point();
+		p2.setX(10);
+		p2.setY(23);
+		p2.draw();
 		
 
 	}
