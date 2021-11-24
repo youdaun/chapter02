@@ -43,4 +43,17 @@ public class Point {
 	public void draw() {
 		System.out.println("점[x=" + x + ", y=" + y + "]을 그렸습니다.");
 	}
+	
+	//action >> true면 그리는기능 , false면 지우는 기능
+	public void draw(boolean action) {
+		if(action == true) {
+			System.out.println("점[x=" + x + ", y=" + y + "]을 그렸습니다.");
+		}
+		else if(action == false) {
+			System.out.println("점[x=" + x + ", y=" + y + "]을 지웠습니다.");
+		}
+		else {
+			System.out.println("잘못된 입력");
+		}
+	}
 }

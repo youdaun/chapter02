@@ -11,6 +11,7 @@ public class Song {
 	private int track;
 
 	// 생성자
+	/*
 	public Song(String artist, String title, String album, int year, int track, String composer) {
 		this.title = title;
 		this.artist = artist;
@@ -18,6 +19,20 @@ public class Song {
 		this.composer = composer;
 		this.year = year;
 		this.track = track;
+	}
+	*/
+	
+	public Song(String artist, String title, String album, int year, int track) {
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.year = year;
+		this.track = track;
+	}
+	
+	public Song(String artist, String title, String album, int year) {
+		//맨 마지막 track 자리에 공백을 주는 경우
+		this(artist, title, album, year, 0);
 	}
 
 	public Song() {
@@ -81,6 +96,6 @@ public class Song {
 	}
 	
 	public void showInfo() {
-		System.out.println(title + ", " + artist + " ( " + album + ", " + year + ", " + track + ", " + composer + " )");
+		System.out.println(title + ", " + artist + " ( " + album + ", " + year + ", " + track + " )");
 	}
 }

@@ -14,6 +14,12 @@ public class PointApp {
 		p2.setY(23);*/
 		p2.draw();
 		
+		Point p3 = new Point(55, 65);
+		p3.draw(true);
+		p3.draw(false);
+		p3.draw();
+		
+		p1.draw(false);
 
 	}
 
